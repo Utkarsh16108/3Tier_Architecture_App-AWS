@@ -54,21 +54,21 @@ The architecture ensures secure communication between tiers, internal traffic ro
 
 **Tech Stack**
 
-**Cloud:** AWS (EC2, VPC, RDS, IAM, S3, ALB)
-**Backend:** Node.js
-**Database:** MySQL (Amazon RDS)
-**Web Server:** Nginx
-**Process Manager:** PM2
-**OS:** Amazon Linux
+**1. Cloud:** AWS (EC2, VPC, RDS, IAM, S3, ALB)**
+**2. Backend:** Node.js
+**3. Database:** MySQL (Amazon RDS)
+**4. Web Server:** Nginx
+**5. Process Manager:** PM2
+**6. OS:** Amazon Linux
 
 **Key Features**
-✔ High Availability Architecture.
-✔ Fault Tolerant Infrastructure.
-✔ Internal & External Load Balancing.
-✔ Secure Private/Public Subnet Segmentation. 
-✔ SSL-Based Secure Communication. 
-✔ Scalable Multi-Tier Deployment. 
-✔ Production-Like AWS Infrastructure.
+1. High Availability Architecture.
+2. Fault Tolerant Infrastructure.
+3. Internal & External Load Balancing.
+4. Secure Private/Public Subnet Segmentation. 
+5. SSL-Based Secure Communication. 
+6. Scalable Multi-Tier Deployment. 
+7. Production-Like AWS Infrastructure.
 
 **Security Implementation**
 1. Database deployed in private subnet
