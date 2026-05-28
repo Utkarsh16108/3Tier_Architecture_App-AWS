@@ -56,12 +56,12 @@ The architecture ensures secure communication between tiers, internal traffic ro
 
 **Tech Stack**
 
-•	Cloud: AWS (EC2, VPC, RDS, IAM, S3, ALB)
-•	Backend: Node.js
-•	Database: MySQL (Amazon RDS)
-•	Web Server:  Nginx
-•	Process Manager:  PM2
-•	OS:  Amazon Linux
+**•	Cloud**: AWS (EC2, VPC, RDS, IAM, S3, ALB)
+**•	Backend:** Node.js
+**•	Database:** MySQL (Amazon RDS)
+**•	Web Server:**  Nginx
+**•	Process Manager:**  PM2
+**•	OS:**  Amazon Linux
 
 **Key Features**
 1. High Availability Architecture.
