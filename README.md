@@ -2,7 +2,7 @@
 
 **AWS 3-Tier Architecture Application Deployment with High Availability & Fault Tolerance**
 
-**Project Overview**
+# **Project Overview**
 This project demonstrates the deployment of a highly available and fault-tolerant 3-Tier Web Application Architecture on AWS. The infrastructure is designed following cloud best practices by separating the application into Web Tier, Application Tier, and Database Tier to ensure scalability, security, maintainability, and high availability.
 
 The project leverages AWS services such as VPC, EC2, RDS, S3, IAM, Application Load Balancer (ALB), SSL/TLS, and Domain Mapping to create a production-like environment.
