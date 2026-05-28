@@ -23,21 +23,22 @@ The architecture ensures secure communication between tiers, internal traffic ro
 
 
 **Architecture Overview**
+
 **1. Web Tier**
-Hosted on EC2 instances in public subnets
-Configured with Nginx to serve frontend traffic
-Integrated with an External Application Load Balancer
-Handles incoming user requests securely using HTTPS (SSL Certificate)
+1. Hosted on EC2 instances in public subnets
+2. Configured with Nginx to serve frontend traffic
+3. Integrated with an External Application Load Balancer
+4. Handles incoming user requests securely using HTTPS (SSL Certificate)
 **2. Application Tier**
-Hosted on EC2 instances in private subnets
-Node.js-based backend application managed using PM2
-Internal communication enabled through an Internal Load Balancer
-Securely communicates with the database layer
+1. Hosted on EC2 instances in private subnets
+2. Node.js-based backend application managed using PM2
+3. Internal communication enabled through an Internal Load Balancer
+4. Securely communicates with the database layer
 **3. Database Tier**
-Configured using Amazon RDS (MySQL)
-Deployed in private networking for enhanced security
-Stores transactional application data
-Access restricted through Security Groups
+1. Configured using Amazon RDS (MySQL)
+2. Deployed in private networking for enhanced security
+3. Stores transactional application data
+4. Access restricted through Security Groups
 
 **Deployment Workflow**
 1. Created a secure VPC Architecture with public and private subnets.
