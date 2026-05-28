@@ -22,9 +22,9 @@ The architecture ensures secure communication between tiers, internal traffic ro
 - **Route 53**
 
 
-**Architecture Overview**
+# **Architecture Overview**
 
-**Web Tier**
+ **1. Web Tier**
 1. Hosted on EC2 instances in public subnets
 2. Configured with Nginx to serve frontend traffic
 3. Integrated with an External Application Load Balancer
@@ -44,7 +44,7 @@ The architecture ensures secure communication between tiers, internal traffic ro
 3. Stores transactional application data
 4. Access restricted through Security Groups
 
-**Deployment Workflow**
+# **Deployment Workflow**
 1. Created a secure VPC Architecture with public and private subnets.
 2. Configured S3 Bucket for application storage and IAM role-based access.
 3. Launched and configured Amazon RDS MySQL Database.
@@ -54,7 +54,7 @@ The architecture ensures secure communication between tiers, internal traffic ro
 7. Configured an External Load Balancer for user traffic routing.
 8. Enabled SSL/TLS encryption and domain mapping for secure access.
 
-**Tech Stack**
+# **Tech Stack**
 
 1. **Cloud**: AWS (EC2, VPC, RDS, IAM, S3, ALB)
 2. **Backend:** Node.js
@@ -63,7 +63,7 @@ The architecture ensures secure communication between tiers, internal traffic ro
 5. **Process Manager:**  PM2
 6. **OS:**  Amazon Linux
 
-**Key Features**
+# **Key Features**
 1. High Availability Architecture.
 2. Fault Tolerant Infrastructure.
 3. Internal & External Load Balancing.
@@ -72,7 +72,7 @@ The architecture ensures secure communication between tiers, internal traffic ro
 6. Scalable Multi-Tier Deployment. 
 7. Production-Like AWS Infrastructure.
 
-**Security Implementation**
+# **Security Implementation**
 1. Database deployed in private subnet
 2. IAM Role-based access instead of hardcoded credentials
 3. Security Group-based communication between tiers
