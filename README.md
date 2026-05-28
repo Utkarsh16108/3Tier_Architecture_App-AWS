@@ -24,17 +24,19 @@ The architecture ensures secure communication between tiers, internal traffic ro
 
 **Architecture Overview**
 
-**1. Web Tier**
+**Web Tier**
 1. Hosted on EC2 instances in public subnets
 2. Configured with Nginx to serve frontend traffic
 3. Integrated with an External Application Load Balancer
 4. Handles incoming user requests securely using HTTPS (SSL Certificate)
+
 
 **2. Application Tier**
 1. Hosted on EC2 instances in private subnets
 2. Node.js-based backend application managed using PM2
 3. Internal communication enabled through an Internal Load Balancer
 4. Securely communicates with the database layer
+
 
 **3. Database Tier**
 1. Configured using Amazon RDS (MySQL)
