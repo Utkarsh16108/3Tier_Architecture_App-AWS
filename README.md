@@ -29,11 +29,13 @@ The architecture ensures secure communication between tiers, internal traffic ro
 2. Configured with Nginx to serve frontend traffic
 3. Integrated with an External Application Load Balancer
 4. Handles incoming user requests securely using HTTPS (SSL Certificate)
+
 **2. Application Tier**
 1. Hosted on EC2 instances in private subnets
 2. Node.js-based backend application managed using PM2
 3. Internal communication enabled through an Internal Load Balancer
 4. Securely communicates with the database layer
+
 **3. Database Tier**
 1. Configured using Amazon RDS (MySQL)
 2. Deployed in private networking for enhanced security
@@ -60,12 +62,12 @@ The architecture ensures secure communication between tiers, internal traffic ro
 **OS:** Amazon Linux
 
 **Key Features**
-✔ High Availability Architecture
-✔ Fault Tolerant Infrastructure
-✔ Internal & External Load Balancing
-✔ Secure Private/Public Subnet Segmentation
-✔ SSL-Based Secure Communication
-✔ Scalable Multi-Tier Deployment
+✔ High Availability Architecture.
+✔ Fault Tolerant Infrastructure.
+✔ Internal & External Load Balancing.
+✔ Secure Private/Public Subnet Segmentation. 
+✔ SSL-Based Secure Communication. 
+✔ Scalable Multi-Tier Deployment. 
 ✔ Production-Like AWS Infrastructure.
 
 **Security Implementation**
