@@ -1,9 +1,7 @@
 3 Tier Project
 ---------------------------
-GitHub URL: https://github.com/KastroVKiran/3TierArchitectureApp.git
-
 *******************************************
-Steps for Setting Up the Project Infrastructure
+Steps how I did It
 *******************************************
 1. VPC Creation
 Design and create a Virtual Private Cloud (VPC) to serve as the foundation for the project infrastructure.
@@ -24,24 +22,21 @@ Provision web-tier resources and set up an external load balancer to manage inco
 6. SSL Certification and Domain Mapping
 Generate an SSL certificate and apply it to the external load balancer to ensure secure communication.
 Map the domain name to the external load balancer for public accessibility.
-
-
-
 ~~~~~~~~~~~
 Step 3
 ~~~~~~~~~~~
 
-Go into the following path of cloned code "application-code/app-tier/DbConfig.js" and open 'Dbconfig.js' file and change the things accordingly as shown below;
+went into the following path of cloned code "application-code/app-tier/DbConfig.js" and open 'Dbconfig.js' file and change the things accordingly as shown below;
 module.exports = Object.freeze({
     DB_HOST: 'YOUR-DATABASE-ENDPOINT.ap-south-1.rds.amazonaws.com',
     DB_USER: 'admin',
-    DB_PWD: 'kastro2025',
+    DB_PWD: 'Utkarsh200,
     DB_DATABASE: 'webappdb'
 });
 
 The reason for having the above info is our App Servers running in Private Subnets should be able to connect to the DB, for that connectivity it is going to use these credentials provided in DbConfig.js file. 
 
-Update the above code and upload the Dbconfig.js file in the S3 bucket of 'app-tier' folder.
+Updated the above code and upload the Dbconfig.js file in the S3 bucket of 'app-tier' folder.
 
 ~~~~~~~~~~~
 Step 4
@@ -49,7 +44,7 @@ Step 4
 Creation of App Tier Resources
 
 4.1. 
-In this instance we will do the App Server Setup and DB Server Configuration. Execute the below commands;
+In this instance I do the App Server Setup and DB Server Configuration. Execute the below commands;
 Install MySQL
 sudo yum install mysql -y
 
